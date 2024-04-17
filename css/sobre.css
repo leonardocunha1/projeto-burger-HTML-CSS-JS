@@ -1,0 +1,297 @@
+.custom-shape-divider-top-1712686267 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1712686267 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 45px;
+}
+
+.custom-shape-divider-top-1712686267 .shape-fill {
+    fill: #1B1B1B;
+}
+
+/* SOBRE NÓS */
+
+.sobre-nos {
+    height: 600px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.sobre-nos .sobre-message h1 {
+    font-size: 60px;
+    font-family: 'Calistoga';
+    text-align: center;
+}
+
+.sobre-nos p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+.sobre-nos p span {
+    color: #f26820;
+    font-weight: 700;
+}
+
+/* NOSSO ESPAÇO */
+
+.sobre {
+    background-color: #1b1b1b;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.sobre .sobre-img {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.sobre-img-fachada {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.sobre-img-ambiente {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sobre-img-externa {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sobre .sobre-message h1 {
+    padding: 20px 0;
+    color: #faebd7;
+    font-size: 60px;
+    font-family: 'Calistoga';
+    text-align: center;
+    /* letter-spacing: 5px; */
+}
+
+/* Desafios, etc */
+
+.desafios-h1 {
+    padding: 20px 0;
+    color: #1B1B1B;
+    font-size: 60px;
+    font-family: 'Calistoga';
+    text-align: center;
+}
+
+.desafios h1 span {
+    color: #f26820;
+    margin-left: 4px;
+}
+
+.desafios-p {
+    text-align: center;
+}
+
+.desafios-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 20px;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.desafios-content {
+    width: 320px;
+    background-color: #202020;
+    padding: 30px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 4px #f26820;
+    /* border: 2px solid #f26820; */
+}
+
+.desafios-content h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #faebd7;
+    margin-bottom: 20px;
+}
+
+.desafios-content .img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.desafios-content .img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f26820;
+}
+
+.desafios-content p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #979696;
+    line-height: 1.4;
+}
+
+.desafios-content span {
+    color: #f26820;
+    font-weight: 700;
+}
+
+/* Premiações */
+
+.premiacoes {
+    background-color: #1b1b1b;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.premiacoes-h1 {
+    color:#faebd7;
+    font-family: 'Calistoga';
+    text-align: center;
+    font-size: 60px;
+}
+
+.premiacoes-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.premiacoes-content {
+    display: flex;
+    width: 700px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 6px;
+    /* box-shadow: 2px 2px 4px #fafafa; */
+}
+
+.premiacoes-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.premiacoes-content-left {
+    position: relative;
+}
+
+.premiacoes-content-left h1 {
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: #faebd7;
+}
+
+.premiacoes-content-left .premiacoes-p {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #979696;
+}
+
+.premiacoes-number {
+    position: absolute;
+    font-family: 'calistoga';
+    font-size: 70px;
+    color: #b94608;
+}
+
+
+@media (width < 1080px) {
+    .desafios-content {
+        height: 570px;
+    }
+}
+
+@media (width < 830px) {
+    .sobre-nos {
+        height: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+
+    .sobre-nos .sobre-message h1,
+    .sobre .sobre-message h1 {
+        letter-spacing: normal;
+        font-size: 50px;
+    }
+
+    .premiacoes-content {
+        width: auto;
+        max-width: none;
+    }
+}
+
+@media (width < 630px) {
+    .sobre .sobre-img {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sobre-img-fachada {
+        height: 300px;
+    }
+
+    .premiacoes-content-right {
+        display: none;
+    }
+}
+
+@media (width < 420px) {
+
+    .sobre-nos .sobre-message h1,
+    .sobre .sobre-message h1,
+    .desafios-h1,
+    .premiacoes-h1 {
+        font-size: 40px;
+    }
+
+    .desafios-content {
+        height: auto;
+    }
+
+    .premiacoes-content-left h1 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .premiacoes-number {
+        font-size: 50px;
+    }
+ 
+}

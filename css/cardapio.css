@@ -1,0 +1,89 @@
+.h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'calistoga';
+    color: #1b1b1b;
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.exclamacao-decoration {
+    color: #f26820;
+}
+
+.burgers-area,
+.bebidas-area,
+.sobremesas-area {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 440px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.burger,
+.drinks,
+.sobremesas {
+    display: flex;
+    /* width: 600px;
+    max-width: 100%; */
+    gap: 20px;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 4px #f26820;
+}
+
+.content-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.content-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content-nome {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'poppins';
+    color: #faebd7;
+}
+
+.content-descricao {
+    font-size: 15px;
+    color: #979696;
+}
+
+@media (width < 500px) {
+
+    .burgers-area,
+    .bebidas-area,
+    .sobremesas-area {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+
+    .burger,
+    .drinks,
+    .sobremesas {
+        flex-direction: column;
+    }
+
+    .content-nome {
+        text-align: center;
+    }
+}

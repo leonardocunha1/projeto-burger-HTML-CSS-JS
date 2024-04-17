@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Menu */
+
+
+.menu-principal {
+    background-color: #1b1b1b;
+    padding: 20px 50px;
+    width: 100%;
+    z-index: 10;
+    position: static;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu .menu-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu .menu-info li a {
+    text-decoration: none;
+    color: #faebd7;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.menu .menu-info li a:hover {
+    color: #f26820;
+}
+
+.menu .menu-info li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #f26820;
+    transition: all 0.3s ease;
+}
+
+.menu .menu-info li a:hover::after {
+    width: 100%;
+}
+
+.active {
+    border-bottom: 3px solid #f26820;
+}
+
+.menu .button {
+    padding: 10px 20px;
+    background-color: #f26820;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+}
+
+.menu .button:hover {
+    background-color: #b14545;
+    color: #faebd7;
+    transform: scale(1.1);
+}
+
+.sticky {
+    position: fixed;
+    background-color: #1b1b1bd2;
+}
+
+/* Parte menu mobile */
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-icon button img {
+    width: 45px;
+}
+
+.mobile-menu {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: auto;
+    background-color: #b14545;
+    padding: 0px 20px;
+    border-radius: 0 0 0 30px;
+    z-index: 3;
+    transition: right 0.4s ease;
+    /* overflow: hidden; */
+}
+
+.mobile-menu-close-btn {
+    background-color: #000000;
+    border: none;
+    color: #faebd7;
+    font-weight: 700;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu .menu-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+    list-style: none;
+}
+
+.mobile-menu .menu-info .menu-item {
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #faebd7;
+    border-bottom: 2px solid #faebd7;
+}
+
+.mobile-menu .button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #faebd7;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background 1.5s ease;
+    background-color: #25252552;
+    backdrop-filter: blur(3px);
+    z-index: 2;
+}
+
+/* Banner */
+
+.banner {
+    background-color: #1b1b1b;
+    /* width: 100vw; */
+    position: relative;
+    display: flex;
+}
+
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* TEM QUE COLOCAR VISIBILITY: HIDDEN POR CONTA DO SCROLL REAVEAL */
+.banner-message,
+.banner-image {
+    visibility: hidden;
+}
+
+.banner .banner-message {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 120px;
+    line-height: 0.9;
+    font-family: 'Calistoga';
+    color: white;
+    margin-top: -70px;
+}
+
+.banner p {
+    font-size: 30px;
+    color: #f26820;
+    font-weight: 700;
+    font-family: 'Poppins';
+    margin-top: 35px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.banner .banner-image {
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner-mobile-menu {
+    display: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contact-area {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.contact-area img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Borda SVG do banner */
+.custom-shape-divider-bottom-1709056755 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709056755 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 78px;
+}
+
+.custom-shape-divider-bottom-1709056755 .shape-fill {
+    fill: #F26820;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Informações como hambúrguer é feito */
+.info-burger {
+    padding-top: 50px;
+}
+
+.info-burger-area {
+    display: flex;
+}
+
+.info-burger-img-burger {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-burger-img-burger img {
+    width: 500px;
+}
+
+.info-burger-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-burger-text h1 {
+    font-family: 'Calistoga';
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-burger-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.info-burger-text-title {
+    font-weight: 700;
+    color: #F26820;
+}
+
+/* Burgers favoritos */
+
+.burger-favorite {
+    background-color: #1b1b1b;
+    margin-top: -40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.burger-favorite-h1 {
+    color: #faebd7;
+    font-family: 'Calistoga';
+    font-size: 50px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    background-color: #5ec576;
+    font-family: inherit;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #4bbb7d;
+}
+
+/* OPERATIONS */
+.operations {
+    max-width: 100%;
+    margin: 70px auto 0 auto;
+    /* background-color: #272727; */
+}
+
+.operations__tab-container {
+    display: flex;
+    justify-content: center;
+}
+
+.operations__tab {
+    margin-right: 2.5rem;
+    transform: translateY(-50%);
+}
+
+.operations__tab span {
+    margin-right: 1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.operations__tab--1 {
+    background-color: #ffcb03;
+}
+
+.operations__tab--1:hover {
+    background-color: #ffbb00;
+}
+
+.operations__tab--3 {
+    background-color: #ff585f;
+    margin: 0;
+}
+
+.operations__tab--3:hover {
+    background-color: #fd424b;
+}
+
+.operations__tab--active {
+    transform: translateY(-66%);
+}
+
+.operations__content {
+    display: none;
+    gap: 20px;
+    padding: 30px 40px;
+    color: #faebd7;
+}
+
+.operations__content--active {
+    display: flex;
+}
+
+.operations__content img {
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.burger-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.name-burger {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.burger-content {
+    font-size: 16px;
+}
+
+/* Área feedback clientes */
+
+.feedback-clients {
+    margin-top: 30px;
+}
+
+.feedback-h1 {
+    font-size: 50px;
+    font-family: 'Calistoga';
+    text-align: center;
+}
+
+.slider {
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+
+    /* IN THE END */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* THIS creates the animation! */
+    transition: transform 1s;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border-radius: 50%;
+    height: 88px;
+    width: 88px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.slider__btn--left {
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+    right: 6%;
+    transform: translate(50%, -50%);
+}
+
+.dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dots__dot {
+    border: none;
+    background-color: #b9b9b9;
+    opacity: 0.7;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 28px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    /* Only necessary when overlying images */
+    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+    margin: 0;
+}
+
+.dots__dot--active {
+    background-color: #888;
+    opacity: 1;
+}
+
+/* Depoimento dos clientes */
+.testimonial {
+    width: 65%;
+    position: relative;
+}
+
+.testimonial::before {
+    content: '\201C';
+    position: absolute;
+    top: -60px;
+    left: -108px;
+    line-height: 1;
+    font-size: 240px;
+    color: #F26820;
+}
+
+.testimonial__header {
+    font-size: 20px;
+    color: #F26820;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.testimonial__text {
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.testimonial__author {
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+}
+
+.testimonial__photo {
+    grid-row: 1 / span 2;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.testimonial__name {
+    font-size: 20px;
+    font-weight: 500;
+    align-self: end;
+    margin: 0;
+}
+
+.testimonial__info {
+    color: #1b1b1b;
+}
+
+.section__title--testimonials {
+    margin-bottom: 4rem;
+}
+
+footer {
+    height: 150px;
+    background-color: #1b1b1b;
+    color: #faebd7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F26820;
+}
+
+/* Parte do MAPA */
+
+#map {
+    height: 300px;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+.localizacao {
+    padding: 40px 0;
+    background-color: #1b1b1b;
+}
+
+.localizacao h1 {
+    font-size: 50px;
+    color: #faebd7;
+    font-family: 'Calistoga';
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo-wpp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1100px) {
+    .banner .banner-message {
+        padding-left: 50px;
+    }
+
+    .banner h1 {
+        font-size: 100px;
+    }
+
+    .info-burger-area {
+        margin-bottom: 40px;
+    }
+
+    .info-burger-img-burger img {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .burger-favorite {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu .menu-info {
+        gap: 20px;
+    }
+
+    .menu .menu-info .menu-item {
+        font-size: 16px;
+    }
+
+    .banner h1 {
+        font-size: 85px;
+    }
+
+    .banner p {
+        font-size: 25px;
+        color: #ffa500;
+        margin-top: 20px;
+    }
+
+    .contact-area {
+        top: 150px;
+    }
+
+    .info-burger-img-burger img {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-principal {
+        padding: 20px 0;
+    }
+
+    .menu .menu-info,
+    .menu .button {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .banner .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .banner-message {
+        align-items: center;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .banner .banner-image {
+        justify-content: center;
+    }
+
+    .banner .banner-image img {
+        margin-top: 10px;
+        width: 452px;
+    }
+
+    .banner h1 {
+        margin: 15px;
+        text-align: center;
+    }
+
+    .banner p {
+        text-align: center;
+    }
+
+    .contact-area {
+        top: 240px;
+    }
+
+    .info-burger-area {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .info-burger-img-burger img {
+        width: 270px;
+    }
+
+    .info-burger-text {
+        padding: 0 50px;
+    }
+
+    .burger-favorite-h1,
+    .feedback-h1 {
+        font-size: 40px;
+    }
+
+    .burger-favorite {
+        margin: 0;
+    }
+
+    .operations__content img {
+        width: 250px;
+        height: 320px;
+    }
+
+    .localizacao h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .operations__tab-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .operations__tab {
+        margin: 0;
+    }
+
+    .btn {
+        margin-bottom: 25px;
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .btn:last-child {
+        margin-bottom: 0;
+    }
+
+    .name-burger h1 {
+        text-align: center;
+    }
+    
+    .burger-info {
+        margin-top: 0;
+    }
+    .operations__content {
+        padding: 0px 40px;
+    }
+    .operations__content--active {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial::before {
+        font-size: 170px;
+        top: -40px;
+        left: -70px;
+    }
+
+    .slider {
+        height: 520px;
+    }
+
+    .slide {
+        height: auto;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .banner h1 {
+        font-size: 65px;
+    }
+
+    .banner h2 {
+        font-size: 25px;
+    }
+
+    .banner img {
+        width: 220px;
+    }
+
+    .contact-area {
+        display: none;
+    }
+
+    .info-burger-text {
+        padding: 0 20px;
+    }
+
+    .slider {
+        height: 600px;
+    }
+
+    .slider__btn {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .testimonial::before {
+        content: "";
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .slider {
+        height: 700px;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diiner's Burgers</title>
+    <link rel="icon" href="./images/logos/logo 4.jpg" type="img/jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/fazerpedido.css" />
+  </head>
+  <body>
+    <div class="areas">
+      <section class="menu-principal">
+        <div class="menu container">
+          <img src="./images/logos/logo 4.jpg" alt="logo" />
+
+          <nav>
+            <ul class="menu-info">
+              <li><a href="index.html" class="menu-item">Início</a></li>
+              <li><a href="sobre.html" class="menu-item">Sobre nós</a></li>
+              <li><a href="cardapio.html" class="menu-item">Cardápio</a></li>
+              <li><a href="contato.html" class="menu-item">Contato</a></li>
+            </ul>
+          </nav>
+
+          <button class="button">Fazer Pedido</button>
+
+          <div class="mobile-menu-icon">
+            <button class="mobile-menu-icon-button">
+              <img src="./images/icons/menu.svg" alt="" class="icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile-menu">
+          <div class="mobile-menu-close">
+            <button class="mobile-menu-close-btn">X</button>
+          </div>
+          <ul class="menu-info">
+            <li><a href="index.html" class="menu-item">Início</a></li>
+            <li><a href="sobre.html" class="menu-item">Sobre nós</a></li>
+            <li><a href="cardapio.html" class="menu-item">Cardápio</a></li>
+            <li><a href="contato.html" class="menu-item">Contato</a></li>
+          </ul>
+
+          <a href="fazerpedido.html">
+            <button class="button">Fazer Pedido</button>
+          </a>
+        </div>
+      </section>
+
+      <div class="overlay hidden"></div>
+
+      <!-- Apenas para mobile -->
+      <header>
+        <div class="menu-openner"><span>0</span>🛒</div>
+      </header>
+
+      <section class="area-pedido">
+        <section class="models">
+          <div class="burger-item">
+            <a href="">
+              <div class="burger-item--img"><img src="" /></div>
+              <div class="burger-item--add">+</div>
+            </a>
+            <div class="burger-item--price">R$ --</div>
+            <div class="burger-item--name">--</div>
+            <div class="burger-item--desc">--</div>
+          </div>
+
+          <div class="sobremesa-item">
+            <a href="">
+              <div class="sobremesa-item--img"><img src="" /></div>
+              <div class="sobremesa-item--add">+</div>
+            </a>
+            <div class="sobremesa-item--price">R$ --</div>
+            <div class="sobremesa-item--name">--</div>
+            <div class="sobremesa-item--desc">--</div>
+          </div>
+
+          <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+              <button class="cart--item-qtmenos">-</button>
+              <div class="cart--item--qt">1</div>
+              <button class="cart--item-qtmais">+</button>
+            </div>
+          </div>
+        </section>
+
+        <main>
+          <h1 class="h1">Burgers</h1>
+          <!-- Local onde o cardápio será exibido -->
+          <div class="burger-area"></div>
+
+          <!-- <h1 class="h1">Sobremesas</h1>
+          <div class="sobremesas-area"></div> -->
+        </main>
+        <aside>
+          <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1 class="h1-burgers">Pedido 🍔</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+              <div class="cart--totalitem subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
+              </div>
+              <div class="cart--totalitem desconto">
+                <span>Desconto (-10%)</span>
+                <span>R$ --</span>
+              </div>
+              <div class="cart--totalitem total big">
+                <span>Total</span>
+                <span>R$ --</span>
+              </div>
+              <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+          </div>
+        </aside>
+        <!-- Quando aperta no + em um item do cardápio ele abre o modal -->
+        <div class="burgerWindowArea">
+          <div class="burgerWindowBody">
+            <div class="burgerInfo--cancelMobileButton">Voltar</div>
+            <div class="burgerBig">
+              <img src="" />
+            </div>
+            <div class="burgerInfo">
+              <h1>--</h1>
+              <div class="burgerInfo--desc">--</div>
+              <div class="burgerInfo--sizearea">
+                <div class="burgerInfo--sector">Tamanho</div>
+                <div class="burgerInfo--sizes">
+                  <div data-key="0" class="burgerInfo--size">
+                    1- <span>--</span>
+                  </div>
+                  <div data-key="1" class="burgerInfo--size">
+                    2- <span>--</span>
+                  </div>
+                  <div data-key="2" class="burgerInfo--size selected">
+                    3- <span>--</span>
+                  </div>
+                  <div data-key="3" class="burgerInfo--size selected">
+                    4- <span>--</span>
+                  </div>
+                </div>
+              </div>
+              <div class="burgerInfo--pricearea">
+                <div class="burgerInfo--sector">Preço</div>
+                <div class="burgerInfo--price">
+                  <div class="burgerInfo--actualPrice">R$ --</div>
+                  <div class="burgerInfo--qtarea">
+                    <button class="burgerInfo--qtmenos">-</button>
+                    <div class="burgerInfo--qt">1</div>
+                    <button class="burgerInfo--qtmais">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="burgerInfo--addButton">Adicionar ao carrinho</div>
+              <div class="burgerInfo--cancelButton">Cancelar</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./js/geral.js"></script>
+    <script src="./js/sabores.js"></script>
+    <script src="./js/fazerpedido.js"></script>
+  </body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diiner's Burgers</title>
+    <link rel="icon" href="./images/logos/logo 4.jpg" type="img/jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <section class="menu-principal">
+      <div class="menu container">
+        <img src="./images/logos/logo 4.jpg" alt="logo" />
+
+        <nav>
+          <ul class="menu-info">
+            <li><a href="index.html" class="menu-item">Início</a></li>
+            <li><a href="sobre.html" class="menu-item">Sobre nós</a></li>
+            <li><a href="cardapio.html" class="menu-item">Cardápio</a></li>
+            <li><a href="contato.html" class="menu-item">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="fazerpedido.html">
+          <button class="button">Fazer Pedido</button>
+        </a>
+
+        <div class="mobile-menu-icon">
+          <button class="mobile-menu-icon-button">
+            <img src="./images/icons/menu.svg" alt="" class="icon" />
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu-close">
+          <button class="mobile-menu-close-btn">X</button>
+        </div>
+        <ul class="menu-info">
+          <li><a href="index.html" class="menu-item">Início</a></li>
+          <li><a href="sobre.html" class="menu-item">Sobre nós</a></li>
+          <li><a href="cardapio.html" class="menu-item">Cardápio</a></li>
+          <li><a href="contato.html" class="menu-item">Contato</a></li>
+        </ul>
+
+        <a href="fazerpedido.html">
+          <button class="button">Fazer Pedido</button>
+        </a>
+      </div>
+    </section>
+
+    <div class="overlay hidden"></div>
+
+    <section class="banner">
+      <div class="container">
+        <div class="banner-message">
+          <h1>Diiner's Burgers<span class="virgula"></span></h1>
+          <p>Saboreie o inexplicável!</p>
+        </div>
+        <div class="banner-image">
+          <img src="./images/burgers/burgao.png" alt="um delicioso lanche" />
+        </div>
+      </div>
+      <div class="contact-area">
+        <a href=""
+          ><img src="./images/icons/square-facebook.svg" alt="" srcset=""
+        /></a>
+        <a href=""
+          ><img src="./images/icons/instagram.svg" alt="" srcset=""
+        /></a>
+        <a href=""
+          ><img src="./images/icons/whatsapp.svg" alt="" srcset=""
+        /></a>
+      </div>
+
+      <div class="custom-shape-divider-bottom-1709056755">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="info-burger">
+      <div class="container">
+        <div class="info-burger-area">
+          <div class="info-burger-img-burger">
+            <img src="./images/burgers/bg arrumado.png" alt="" />
+          </div>
+          <div class="info-burger-text">
+            <h1>Como nosso burger é feito?</h1>
+            <ul>
+              <li>
+                <span class="info-burger-text-title"
+                  >Seleção dos Ingredientes:</span
+                >
+                Começamos selecionando os melhores ingredientes disponíveis,
+                desde a carne suculenta até os vegetais frescos e os molhos
+                saborosos.
+              </li>
+              <li>
+                <span class="info-burger-text-title">Preparação da Carne:</span>
+                Nossa carne é moída diariamente e temperada com uma combinação
+                secreta de especiarias, garantindo sabor e suculência em cada
+                pedaço.
+              </li>
+              <li>
+                <span class="info-burger-text-title"
+                  >Montagem Personalizada:</span
+                >
+                Cada hambúrguer é montado de acordo com as preferências
+                individuais dos nossos clientes. Você escolhe o tipo de pão, os
+                acompanhamentos, queijos e molhos para criar o seu hambúrguer
+                dos sonhos.
+              </li>
+              <li>
+                <span class="info-burger-text-title">Grelhado no Ponto:</span>
+                Os nossos mestres grelhadores cuidam para que cada hambúrguer
+                seja grelhado à perfeição, garantindo um exterior crocante e um
+                interior suculento.
+              </li>
+              <li>
+                <span class="info-burger-text-title">Toque Final:</span> Antes
+                de ser servido, cada hambúrguer recebe um toque final de frescor
+                com vegetais crocantes e molhos artesanais.
+              </li>
+              <li>
+                <span class="info-burger-text-title">Servido com Carinho:</span>
+                Por fim, o seu hambúrguer é cuidadosamente embalado e entregue a
+                você com um sorriso caloroso, pronto para ser saboreado.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="burger-favorite">
+      <div class="container">
+        <h1 class="burger-favorite-h1">Os Burgers favoritos da galera</h1>
+
+        <div class="operations">
+          <div class="operations__tab-container">
+            <button
+              class="btn operations__tab operations__tab--1 operations__tab--active"
+              data-tab="1"
+            >
+              <span>01</span>Diiner tudo
+            </button>
+            <button class="btn operations__tab operations__tab--2" data-tab="2">
+              <span>02</span>Diinerníficon
+            </button>
+            <button class="btn operations__tab operations__tab--3" data-tab="3">
+              <span>03</span>Burger Heaven
+            </button>
+          </div>
+          <div
+            class="operations__content operations__content--1 operations__content--active"
+          >
+            <img src="./images/burgers/Burger1.png" alt="" srcset="" />
+
+            <div class="burger-info">
+              <div class="name-burger">
+                <h1>Diiner Tudo</h1>
+              </div>
+              <div class="burger-content">
+                <p>
+                  Uma camada generosa de queijo cheddar derretido com um molho
+                  especial sobre o hambúrguer suculento, trazendo um sabor
+                  intenso e cremoso que combina perfeitamente com a carne. Isso
+                  adiciona uma dimensão extra de sabor e sofisticação ao seu
+                  hambúrguer, elevando-o a um nível gourmet irresistível.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="operations__content operations__content--2">
+            <img src="./images/burgers/Burger2.png" alt="" srcset="" />
+
+            <div class="burger-info">
+              <div class="name-burger">
+                <h1>Diinerníficon</h1>
+              </div>
+              <div class="burger-content">
+                <p>
+                  Uma combinação de sabores que mistura tradição e inovação. Um
+                  molho especial de cogumelos selvagens, preparado com uma
+                  variedade de cogumelos frescos, creme de leite e ervas finas.
+                  Uma fatia de queijo brie derretido sobre o hambúrguer,
+                  proporcionando uma textura cremosa e um sabor delicado. Para
+                  deliciiaaar, presente folhas frescas de rúcula.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="operations__content operations__content--3">
+            <img src="./images/burgers/Burger3.png" alt="" srcset="" />
+
+            <div class="burger-info">
+              <div class="name-burger">
+                <h1>Burger Heaven</h1>
+              </div>
+              <div class="burger-content">
+                <p>
+                  Este burger é uma homenagem ao hambúrguer clássico americano
+                  com um toque de bacon extra crocante. Uma carne grelhada no
+                  ponto desejado e adicione fatias generosas de bacon
+                  caramelizado. Para uma combinação de sabores, há uma camada de
+                  abacate cremoso e maduro, proporcionando uma textura suave e
+                  um sabor fresco com um toque de molho barbecue defumado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-clients">
+      <div class="container">
+        <h1 class="feedback-h1">Feedback dos nossos clientes</h1>
+
+        <div class="slider">
+          <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                Ambiente Acolhedor, Sabores Divinos!
+              </h5>
+              <p class="testimonial__text">
+                Adoro vir a esta hamburgueria sempre que estou na área. O
+                ambiente é descontraído e acolhedor, perfeito para relaxar com
+                amigos. Os hambúrgueres são simplesmente divinos, suculentos e
+                cheios de sabor. Além disso, o atendimento é impecável, sempre
+                com um sorriso no rosto e prontos para ajudar. Definitivamente
+                recomendo!
+              </p>
+              <address class="testimonial__author">
+                <img
+                  src="images/pessoas/user-1.jpg"
+                  alt=""
+                  class="testimonial__photo"
+                />
+                <h6 class="testimonial__name">João Pintassilgo</h6>
+                <p class="testimonial__info">Cliente Frequente</p>
+              </address>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                Recomendo fortemente a Diiner Burger
+              </h5>
+              <p class="testimonial__text">
+                Fiquei impressionado com a experiência que tive nesta
+                hamburgueria. O ambiente é moderno e convidativo, ideal para uma
+                refeição descontraída. Os hambúrgueres são de alta qualidade,
+                com ingredientes frescos e combinações deliciosas. O atendimento
+                foi rápido e amigável, tornando minha primeira visita memorável.
+                Com certeza voltarei em breve!
+              </p>
+              <address class="testimonial__author">
+                <img
+                  src="images/pessoas/user-2.jpg"
+                  alt=""
+                  class="testimonial__photo"
+                />
+                <h6 class="testimonial__name">Ana Carolina</h6>
+                <p class="testimonial__info">Primeira Visita</p>
+              </address>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">Negócio é brabo memo!</h5>
+              <p class="testimonial__text">
+                Este lugar é um paraíso para os amantes de hambúrgueres! O
+                ambiente é animado e acolhedor, perfeito para uma noite com
+                amigos ou família. Os hambúrgueres são simplesmente incríveis,
+                suculentos e cheios de sabor. O atendimento é sempre atencioso e
+                rápido, garantindo uma experiência agradável a cada visita.
+                Recomendo a todos os fãs de comida boa e ambiente descontraído!
+              </p>
+              <address class="testimonial__author">
+                <img
+                  src="images/pessoas/user-3.jpg"
+                  alt=""
+                  class="testimonial__photo"
+                />
+                <h6 class="testimonial__name">Marcos Oliveira</h6>
+                <p class="testimonial__info">Amante de Hambúrgueres</p>
+              </address>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="localizacao">
+      <div class="container">
+        <h1>Venha já nos conhecer!</h1>
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © Copyright by
+        <a
+          href="https://www.linkedin.com/in/leonardo-cunha-8a6170263/"
+          target="_blank"
+          >Leonardo Cunha</a
+        >
+      </p>
+    </footer>
+
+    <a href="https://wa.me/5516999999999" target="_blank">
+      <img
+        class="logo-wpp"
+        src="./images/icons/icons8-whatsapp.svg"
+        alt=""
+        srcset=""
+      />
+    </a>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./js/geral.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

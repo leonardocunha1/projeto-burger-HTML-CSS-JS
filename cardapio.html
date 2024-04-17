@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diiner's Burgers</title>
+    <link rel="icon" href="./images/logos/logo 4.jpg" type="img/jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/cardapio.css" />
+  </head>
+  <body>
+    <section class="menu-principal">
+      <div class="menu container">
+        <img src="./images/logos/logo 4.jpg" alt="logo" />
+
+        <nav>
+          <ul class="menu-info">
+            <li><a href="index.html" class="menu-item">Início</a></li>
+            <li><a href="sobre.html" class="menu-item">Sobre nós</a></li>
+            <li><a href="cardapio.html" class="menu-item">Cardápio</a></li>
+            <li><a href="contato.html" class="menu-item">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="fazerpedido.html">
+          <button class="button">Fazer Pedido</button>
+        </a>
+
+        <div class="mobile-menu-icon">
+          <button class="mobile-menu-icon-button">
+            <img src="./images/icons/menu.svg" alt="" class="icon" />
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu-close">
+          <button class="mobile-menu-close-btn">X</button>
+        </div>
+        <ul class="menu-info">
+          <li><a href="index.html" class="menu-item">Início</a></li>
+          <li><a href="sobre.html" class="menu-item">Sobre nós</a></li>
+          <li><a href="cardapio.html" class="menu-item">Cardápio</a></li>
+          <li><a href="contato.html" class="menu-item">Contato</a></li>
+        </ul>
+
+        <a class="fazer-pedido-mobile" href="fazerpedido.html">
+          <button class="button">Fazer Pedido</button>
+        </a>
+      </div>
+    </section>
+
+    <div class="overlay hidden"></div>
+
+    <section class="cardapio">
+      <div class="area-sabores">
+        <h1 class="burgers-h1 h1">
+          Burgers <span class="exclamacao-decoration">!</span>
+        </h1>
+        <div class="burgers-area">
+          <!-- <div class="burger">
+                <div class="burger-img-area content-area">
+                  <img class="burger-img content-img" src="" alt="" srcset="" />
+                </div>
+                <div class="burger-infos content-infos">
+                  <p class="burger-nome content-name"></p>
+                  <p class="burger-descricao content-descricao"></p>
+                  <p class="burger-ingredientes content-ingredientes"></p>
+                </div>
+                </div> -->
+        </div>
+      </div>
+      <div class="area-sabores">
+        <h1 class="bebidas-h1 h1">
+          Bebidas <span class="exclamacao-decoration">!</span>
+        </h1>
+        <div class="bebidas-area">
+          <!-- <div class="drinks">
+                    <div class="drink-img-area content-area">
+                        <img class="drink-img content-img" src="" alt="" srcset="" />
+                    </div>
+                    <div class="drink-infos content-infos">
+                        <p class="drink-nome content-name"></p>
+                        <p class="drink-descricao content-descricao"></p>
+                        <p class="drink-ingredientes content-ingredientes"></p>
+                    </div>
+                </div> -->
+        </div>
+      </div>
+
+      <div class="area-sabores">
+        <h1 class="sobremesas-h1 h1">
+          Sobremesas <span class="exclamacao-decoration">!</span>
+        </h1>
+        <div class="sobremesas-area">
+          <!-- <div class="sobremesas">
+                    <div class="sobremesa-img-area content-area">
+                        <img class="sobremesa-img content-img" src="" alt="" srcset="" />
+                    </div>
+                    <div class="sobremesa-infos content-infos">
+                        <p class="sobremesa-nome content-name"></p>
+                        <p class="sobremesa-descricao content-descricao"></p>
+                        <p class="sobremesa-ingredientes content-ingredientes"></p>
+                    </div>
+                </div> -->
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © Copyright by
+        <a
+          href="https://www.linkedin.com/in/leonardo-cunha-8a6170263/"
+          target="_blank"
+          >Leonardo Cunha</a
+        >
+      </p>
+    </footer>
+
+    <a href="https://wa.me/5516999999999" target="_blank">
+      <img
+        class="logo-wpp"
+        src="./images/icons/icons8-whatsapp.svg"
+        alt=""
+        srcset=""
+      />
+    </a>
+
+    <script src="./js/geral.js"></script>
+    <script src="./js/sabores.js"></script>
+    <script src="./js/cardapio.js"></script>
+  </body>
+</html>
