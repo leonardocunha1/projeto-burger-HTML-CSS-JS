@@ -3,7 +3,7 @@
 Um simples sistema de pedidos de hambúrguer construído com JavaScript e HTML/CSS.
 Além do sistema de pedidos, há páginas destinadas para informar o usuário sobre a empresa e seus produtos.
 
-## [Clique aqui para visitar o projeto hospedado](https://leonardocunha1.github.io/projeto-burger-HTML-CSS-JS/fazerpedido.html)
+## [Clique aqui para visitar o projeto hospedado](https://leonardocunha1.github.io/projeto-burger-HTML-CSS-JS)
 
 ## Funcionalidades gerais do site
 - Menu e site responsivo para dispositivos móveis.
