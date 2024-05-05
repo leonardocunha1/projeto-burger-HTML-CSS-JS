@@ -3,7 +3,7 @@
 Um simples sistema de pedidos de hambúrguer construído com JavaScript e HTML/CSS.
 Além do sistema de pedidos, há páginas destinadas para informar o usuário sobre a empresa e seus produtos.
 
-## [Clique aqui para visitar o projeto](https://leonardocunha1.github.io/projeto-burger-HTML-CSS-JS/fazerpedido.html)
+## [Clique aqui para visitar o projeto hospedado](https://leonardocunha1.github.io/projeto-burger-HTML-CSS-JS/fazerpedido.html)
 
 ## Funcionalidades gerais do site
 - Menu e site responsivo para dispositivos móveis.
@@ -40,19 +40,19 @@ Obs. Por conta do ScrollReveal, algumas imagens e textos sairam com pouca opacid
 
 <h3>Telas Mobile</h1>
 <p>Seção da página principal</p>
-<img src="/images/printsite/cel1.png" alt="Descrição da Imagem" width="300px">
+<img src="/images/printsite/cel1.png" alt="Descrição da Imagem" width="200px">
 <p>Menu da versão mobile</p>
-<img src="/images/printsite/cel2.png" alt="Descrição da Imagem" width="300px">
+<img src="/images/printsite/cel2.png" alt="Descrição da Imagem" width="200px">
 <p>Seção sobre nós</p>
-<img src="/images/printsite/cel3.png" alt="Descrição da Imagem" width="300px">
+<img src="/images/printsite/cel3.png" alt="Descrição da Imagem" width="200px">
 <p>Seção do cardápio</p>
-<img src="/images/printsite/cel4.png" alt="Descrição da Imagem" width="300px">
+<img src="/images/printsite/cel4.png" alt="Descrição da Imagem" width="200px">
 <p>Seção da área de fazer pedido</p>
-<img src="/images/printsite/cel5.png" alt="Descrição da Imagem" width="300px">
+<img src="/images/printsite/cel5.png" alt="Descrição da Imagem" width="200px">
 <p>Modal do burguer selecionado</p>
-<img src="/images/printsite/cel6.png" alt="Descrição da Imagem" width="300px">
+<img src="/images/printsite/cel6.png" alt="Descrição da Imagem" width="200px">
 <p>Carrinho versão mobile</p>
-<img src="/images/printsite/cel7.png" alt="Descrição da Imagem" width="300px">
+<img src="/images/printsite/cel7.png" alt="Descrição da Imagem" width="200px">
 
   
 
