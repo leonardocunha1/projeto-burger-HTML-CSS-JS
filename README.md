@@ -3,7 +3,7 @@
 Um simples sistema de pedidos de hambúrguer construído com JavaScript e HTML/CSS.
 Além do sistema de pedidos, há páginas destinadas para informar o usuário sobre a empresa e seus produtos.
 
-## Prints do Projeto
+## [Clique aqui para visitar o projeto](https://leonardocunha1.github.io/projeto-burger-HTML-CSS-JS/fazerpedido.html)
 
 ## Funcionalidades gerais do site
 - Menu e site responsivo para dispositivos móveis.
@@ -23,7 +23,36 @@ Além do sistema de pedidos, há páginas destinadas para informar o usuário so
 - Utilização da bliblioteca Leaflet
 - Utilização de conceitos que, geralmente, inciantes de programção (como eu) possuem, tais como: display grid e flex, lógicas de programção na parte de JS, objetos, array, métodos de array, etc...
 
-## Contribuindo
+## Prints do Projeto
+Obs. Por conta do ScrollReveal, algumas imagens e textos sairam com pouca opacidade na printscreen.
 
-Contribuições são bem-vindas! Se você encontrar um bug ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+<h3>Telas Desktop</h3>
+<p>Seção da página principal</p>
+<img src="/images/printsite/pc1.png" alt="Descrição da Imagem" width="300px">
+<p>Seção sobre nós</p>
+<img src="/images/printsite/pc2.png" alt="Descrição da Imagem" width="300px">
+<p>Seção do cardápio</p>
+<img src="/images/printsite/pc3.png" alt="Descrição da Imagem" width="300px">
+<p>Seção da área de fazer pedido</p>
+<img src="/images/printsite/pc4.png" alt="Descrição da Imagem" width="300px">
+<p>Modal do burguer selecionado</p>
+<img src="/images/printsite/pc5.png" alt="Descrição da Imagem" width="300px">
+
+<h3>Telas Mobile</h1>
+<p>Seção da página principal</p>
+<img src="/images/printsite/cel1.png" alt="Descrição da Imagem" width="300px">
+<p>Menu da versão mobile</p>
+<img src="/images/printsite/cel2.png" alt="Descrição da Imagem" width="300px">
+<p>Seção sobre nós</p>
+<img src="/images/printsite/cel3.png" alt="Descrição da Imagem" width="300px">
+<p>Seção do cardápio</p>
+<img src="/images/printsite/cel4.png" alt="Descrição da Imagem" width="300px">
+<p>Seção da área de fazer pedido</p>
+<img src="/images/printsite/cel5.png" alt="Descrição da Imagem" width="300px">
+<p>Modal do burguer selecionado</p>
+<img src="/images/printsite/cel6.png" alt="Descrição da Imagem" width="300px">
+<p>Carrinho versão mobile</p>
+<img src="/images/printsite/cel7.png" alt="Descrição da Imagem" width="300px">
+
+  
 
