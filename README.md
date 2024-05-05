@@ -1,4 +1,4 @@
-# Projeto Diiner's Burgers
+# 🍟 Projeto Diiner's Burgers 🍔
 
 Um simples sistema de pedidos de hambúrguer construído com JavaScript e HTML/CSS.
 Além do sistema de pedidos, há páginas destinadas para informar o usuário sobre a empresa e seus produtos.
